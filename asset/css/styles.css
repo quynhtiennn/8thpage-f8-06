@@ -1,0 +1,145 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --black-color: #080415;
+    --gray-color: #51586a;
+    --violet-color: #5d3bee;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* ---------- Common ---------- */
+
+/* ---------- Header ---------- */
+.header {
+    position: relative;
+}
+.header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    width: calc(100% - 12px);
+    height: 1px;
+    background-color: #d6d3e2;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 15px;
+}
+.logo {
+    width: 37px;
+    height: 44px;
+}
+
+.header__info {
+    display: flex;
+    gap: 10px;
+}
+
+.header__email-icon img {
+    width: 16.696px;
+    height: 11.13px;
+}
+
+.header__email {
+    padding-left: 10px;
+    color: var(--black-color);
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36;
+    text-decoration: underline;
+    display: none;
+}
+.header__menu-icon img {
+    width: 15px;
+    height: 6px;
+}
+
+.header__menu-icon,
+.header__email-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99%;
+    border: 1px solid rgba(93, 59, 238, 0.3);
+}
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.menu-drawer {
+    width: 30%;
+    position: fixed;
+    inset: 80px 0 0 70%;
+    background: #fff;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: 0.5s ease;
+}
+
+.menu-drawer li {
+    padding: 16px;
+text-align: left;
+border-bottom: 1px solid #d6d3e2;
+}
+
+.menu-drawer__link {
+    color: var(--gray-color);
+font-size: 1.8rem;
+font-weight: 400;
+}
+
+.menu-drawer li:hover .menu-drawer__link {
+    opacity: 0.7;
+}
+
+.menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ---------- Hero ---------- */
+/* ---------- Client ---------- */
+/* ---------- Specialities ---------- */
+/* ---------- Project ---------- */
+/* ---------- Experience ---------- */
+/* ---------- Feedback ---------- */
+/* ---------- Q&A ---------- */
+/* ---------- Atmosphere ---------- */
+/* ---------- CTA ---------- */
+/* ---------- Footer ---------- */
