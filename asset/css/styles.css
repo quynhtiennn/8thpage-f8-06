@@ -34,106 +34,122 @@ button {
 /* ---------- Common ---------- */
 
 /* ---------- Header ---------- */
-.header {
-    position: relative;
-}
-.header::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 6px;
-    width: calc(100% - 12px);
-    height: 1px;
-    background-color: #d6d3e2;
-}
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0 15px;
-}
-.logo {
-    width: 37px;
-    height: 44px;
+header {
+    padding-top: 24px;
 }
 
-.header__info {
-    display: flex;
-    gap: 10px;
+header .col-lg-4 {
+    text-align: center;
+    margin: auto 0;
 }
 
-.header__email-icon img {
-    width: 16.696px;
-    height: 11.13px;
+.header__envelop {
+    width: 46px;
+    /* height: 46px; */
+    padding: 12px 9px;
+    border: 1px solid #5d3bee33;
+    border-radius: 50%;
+    margin-bottom: -12px;
 }
 
-.header__email {
-    padding-left: 10px;
+.header__logo {
+    width: 50px;
+}
+
+header span {
     color: var(--black-color);
     font-size: 2.2rem;
-    font-weight: 500;
-    line-height: 1.36;
     text-decoration: underline;
-    display: none;
-}
-.header__menu-icon img {
-    width: 15px;
-    height: 6px;
 }
 
-.header__menu-icon,
-.header__email-icon {
-    width: 32px;
-    height: 32px;
+header nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 99%;
-    border: 1px solid rgba(93, 59, 238, 0.3);
+    justify-content: space-evenly;
 }
 
-.menu-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s ease;
-}
-
-.menu-drawer {
-    width: 30%;
-    position: fixed;
-    inset: 80px 0 0 70%;
-    background: #fff;
-    z-index: 2;
-    transform: translateX(100%);
-    transition: 0.5s ease;
-}
-
-.menu-drawer li {
-    padding: 16px;
-text-align: left;
-border-bottom: 1px solid #d6d3e2;
-}
-
-.menu-drawer__link {
+header li a {
     color: var(--gray-color);
-font-size: 1.8rem;
-font-weight: 400;
-}
-
-.menu-drawer li:hover .menu-drawer__link {
-    opacity: 0.7;
-}
-
-.menu-checkbox:checked ~ .menu-overlay {
-    opacity: 1;
-    visibility: visible;
+    font-size: 1.8rem;
 }
 
 /* ---------- Hero ---------- */
+.hero {
+    position: relative;
+    padding-top: 44px;
+}
+
+.hero .col-lg-6:nth-of-type(1) {
+}
+
+.hero__img {
+    width: 514px;
+    height: 705px;
+}
+
+.hero__line-left {
+    position: absolute;
+    left: -215px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hero .col-lg-6:nth-of-type(2) {
+    padding-left: 85px;
+}
+
+.hero h1 {
+    margin-top: 137px;
+    color: var(--black-color);
+    font-size: 8rem;
+}
+
+.hero p {
+    width: 370px;
+    margin-top: 20px;
+    color: var(--gray-color);
+    font-size: 1.8rem;
+}
+
+.hero__action {
+    margin-top: 50px;
+}
+
+.hero__btn {
+    padding: 16px 37px;
+    margin-right: 30px;
+    background: var(--violet-color);
+    color: white;
+    font-size: 1.8rem;
+}
+
+.hero__work-link {
+    line-height: 50px;
+    text-decoration: underline;
+    color: var(--black-color);
+}
+
+.hero__follow {
+    margin-top: 109px;
+}
+
+.hero__follow div {
+    line-height: 40px;
+}
+
+.hero__follow img {
+    margin-left: 15px;
+}
+
+.hero__line-right {
+    position: absolute;
+    right: -150px;
+    bottom: 0;
+
+}
+
+
+
+
 /* ---------- Client ---------- */
 /* ---------- Specialities ---------- */
 /* ---------- Project ---------- */
