@@ -38,6 +38,7 @@ h1 {
 
 h2 {
     font-size: 5.6rem;
+    line-height: 1.18;
 }
 h3 {
     font-size: 4.2rem;
@@ -223,11 +224,12 @@ header li a {
 
 .specialities .row {
     margin-top: 40px;
-    text-align: left;
+    text-align: center;
 }
 
 .specialities .row div {
-    padding: 32px 42px;
+    padding: 32px 42px 32px 72px;
+    text-align: left;
 }
 
 .specialities__icon {
@@ -239,6 +241,102 @@ header li a {
     width: 100%;
 }
 /* ---------- Project ---------- */
+.project {
+    padding: 86px 0;
+    background: var(--violet-color);
+}
+
+.project__title-row {
+    align-items:  center;
+    margin-bottom: 70px;
+}
+.project__title-row h2,
+.project__title-row p {
+    color: white;
+}
+
+.project__title-row h2 {
+    width: 468px;
+}
+
+.project__title-row p {
+    opacity: 0.7;
+    width: 370px;
+    line-height: 1.43;
+    font-size: 1.6rem;
+}
+
+.project__card-row {
+
+    row-gap: 30px;
+}
+
+.project__card-row .row{
+    padding-left: 15px;
+    background: #FBFAFF;
+}
+
+.project__card {
+    position: relative;
+}
+
+.project__card div {
+    width: 100%;
+
+}
+
+.project__card h4 {
+    margin: 44px 0px 10px 0px;
+    font-weight: 700;
+}
+
+.project__img {
+    width: 246px;
+    height: 187px;
+    padding-top: 25px;
+    /* position: absolute;
+    top: 23px;
+    z-index: 9; */
+}
+
+.project__col-img {
+    position: relative;
+
+}
+
+.project__line-card {
+
+    width: 350px;
+height: 250px;
+    position: absolute;
+    right: 10%;
+    top: 0;
+
+}
+
+.project a {
+    display: block;
+    margin: 20px 0 44px;
+    color: var(--black-color);
+    text-decoration: underline;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.project button {
+    margin: 80px auto 0;
+    background: white;
+    width: 170px;
+    height: 62px;
+    border: none;
+}
+
+.project button a {
+    line-height: 100%;
+    text-decoration: none;
+    background: white;
+}
+
 /* ---------- Experience ---------- */
 /* ---------- Feedback ---------- */
 /* ---------- Q&A ---------- */
