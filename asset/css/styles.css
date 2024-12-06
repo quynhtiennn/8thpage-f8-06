@@ -487,7 +487,7 @@ header li a {
     content: "";
     width: 85%;
     height: 0;
-    border: solid #08182F 1px;
+    border: solid #08182f 1px;
 }
 
 .qna__question {
@@ -504,12 +504,34 @@ p.qna__answer {
 
 .qna__img {
     margin-top: 15%;
-    margin-right: 30%;;
+    margin-right: 30%;
     width: 50px;
     height: 50px;
     text-align: end;
-
 }
 /* ---------- Atmosphere ---------- */
+.atmosphere__description {
+    text-align: center;
+}
+
+.atmosphere__description p {
+    padding: 20px 0 30px;
+}
+
+.atmosphere__link {
+    color: var(--violet-color);
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    text-decoration: underline;
+}
+
+.atmosphere__img-block {
+    padding: 70px 0 140px;
+}
+
+.atmosphere__img {
+    width: 100%
+}
 /* ---------- CTA ---------- */
 /* ---------- Footer ---------- */
