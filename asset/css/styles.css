@@ -60,6 +60,7 @@ p {
     font-size: 1.8rem;
     color: var(--gray-color);
     line-height: 1.67;
+    font-weight: 400;
 }
 
 /* ---------- Header ---------- */
@@ -441,7 +442,6 @@ header li a {
 }
 
 .feedback__dot {
-
     width: 16px;
     height: 16px;
     background: var(--black-color);
@@ -469,6 +469,47 @@ header li a {
     background: var(--violet-color);
 }
 /* ---------- Q&A ---------- */
+.qna {
+    padding: 95px 0 160px;
+}
+
+.qna__title {
+    /* padding-bottom: 80px; */
+}
+
+.qna__item {
+    position: relative;
+}
+
+.qna__item::after {
+    position: absolute;
+    bottom: -5px;
+    content: "";
+    width: 85%;
+    height: 0;
+    border: solid #08182F 1px;
+}
+
+.qna__question {
+    padding: 60px 0 23px;
+}
+
+p.qna__answer {
+    /* display: none; */
+}
+
+.qna__block-img {
+    text-align: right;
+}
+
+.qna__img {
+    margin-top: 15%;
+    margin-right: 30%;;
+    width: 50px;
+    height: 50px;
+    text-align: end;
+
+}
 /* ---------- Atmosphere ---------- */
 /* ---------- CTA ---------- */
 /* ---------- Footer ---------- */
