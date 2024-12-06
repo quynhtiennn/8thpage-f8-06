@@ -531,7 +531,48 @@ p.qna__answer {
 }
 
 .atmosphere__img {
-    width: 100%
+    width: 100%;
 }
 /* ---------- CTA ---------- */
+.cta {
+    padding: 70px 0;
+    background: #fbfaff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta__icon {
+    width: 70px;
+}
+
+.cta h3 {
+    padding: 20px 0;
+}
+
+.cta p {
+    margin: 0 auto 30px;
+    width: 50%;
+}
+
+.cta__line-1 {
+    width: 40%;
+    position: absolute;
+    left: -15%;
+    bottom: -35%;
+}
+
+.cta__line-2 {
+    width: 40%;
+    position: absolute;
+    top: -35%;
+    right: -15%;
+}
+
+.cta__line-3 {
+    width: 60%;
+    position: absolute;
+    top: -38%;
+    left: 20%;
+}
 /* ---------- Footer ---------- */
