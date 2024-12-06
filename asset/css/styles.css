@@ -64,11 +64,11 @@ p {
 }
 
 /* ---------- Header ---------- */
-header {
+.header {
     padding-top: 24px;
 }
 
-header .col-lg-4 {
+.header .col-lg-4 {
     text-align: center;
     margin: auto 0;
 }
@@ -86,18 +86,18 @@ header .col-lg-4 {
     width: 50px;
 }
 
-header span {
+.header span {
     color: var(--black-color);
     font-size: 2.2rem;
     text-decoration: underline;
 }
 
-header nav ul {
+.header nav ul {
     display: flex;
     justify-content: space-evenly;
 }
 
-header li a {
+.header li a {
     color: var(--gray-color);
     font-size: 1.8rem;
 }
@@ -576,3 +576,46 @@ p.qna__answer {
     left: 20%;
 }
 /* ---------- Footer ---------- */
+footer {
+    padding: 50px 0 30px;
+}
+
+.footer__row {
+    position: relative;
+    padding-top: 18px;
+    margin-top: 40px;
+    text-align: center;
+    color: #525771;
+    font-size: 1.8rem;
+}
+
+.footer__row::before {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    content: "";
+    width: 80%;
+    height: 0;
+    border: solid 1px #525771 ;
+    opacity: 0.5;
+}
+
+.footer__row a {
+    position: relative;
+    padding-right: 18px;
+    color: #525771;
+
+}
+
+.footer__row a:nth-of-type(1)::after {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    content: "";
+    width: 0;
+    height: 14px;
+    border: solid 1px #525771 ;
+    opacity: 0.5;
+}
+
+
