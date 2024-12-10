@@ -92,6 +92,10 @@ p {
     text-decoration: underline;
 }
 
+.header__nav-icon {
+    display: none;
+ }
+
 .header nav ul {
     display: flex;
     justify-content: space-evenly;
@@ -229,9 +233,10 @@ p {
     text-align: center;
 }
 
-.specialities .row div {
+.specialities__item-wrap {
     padding: 32px 42px 32px 72px;
     text-align: left;
+    background-color: #FBFAFF;
 }
 
 .specialities__icon {
