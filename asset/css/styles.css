@@ -417,7 +417,7 @@ p {
     text-align: center;
     font-size: 2.4rem;
     width: 679px;
-    height: 114px;
+    /* height: 114px; */
 }
 
 .feedback__group-name {
@@ -583,6 +583,10 @@ p.qna__answer {
 /* ---------- Footer ---------- */
 footer {
     padding: 50px 0 30px;
+}
+
+.footer__info {
+    display: none;
 }
 
 .footer__row {
